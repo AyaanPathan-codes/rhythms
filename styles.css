@@ -5,30 +5,38 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 header {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.logo-navbar, .main-navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .logo-navbar {
-    display: flex;
-    justify-content: center;
     padding: 10px 0;
     background-color: #AB92BF; /* Adjust if needed */
 }
 
 .logo {
-    max-width: 600px; /* Increased logo size */
+    max-width: 600px; /* Adjust logo size */
+    width: 100%; /* Ensure logo takes up full width of its container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .main-navbar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
     background-color: #AB92BF; /* Adjust if needed */
 }
 
@@ -36,6 +44,7 @@ header {
     display: flex;
     list-style: none;
     padding: 10px 0;
+    margin: 0;
 }
 
 .main-navbar ul li {
@@ -66,15 +75,19 @@ header {
 }
 
 .banner {
-    min-height: 100vh;
+    min-height: 100vh; /* Ensure full viewport height */
     background-color: #AB92BF; 
     background-size: cover;
     background-position: center;
-    padding: 10px 8%;
+    padding: 0; /* Remove padding to ensure full screen */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.content {
     text-align: center;
 }
 
@@ -129,6 +142,8 @@ button span {
     border-radius: 10px;
     margin: 15px auto;
     display: block;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
 }
 
 .wrapper {
@@ -153,7 +168,7 @@ button span {
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
     .logo {
-        max-width: 600px; /* Adjusted for better visibility */
+        max-width: 500px; /* Adjusted for better visibility */
     }
 
     .main-navbar ul {
@@ -186,7 +201,7 @@ button span {
 
 @media (max-width: 480px) {
     .logo {
-        max-width: 600px; /* Further adjusted for smaller screens */
+        max-width: 400px; /* Further adjusted for smaller screens */
     }
 
     .content h1 {
