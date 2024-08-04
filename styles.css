@@ -29,7 +29,9 @@ html{
 }
 
 .logo{
-    max-width: 150px;
+    max-width: 500px;
+    
+
 }
 
 .navbar ul{
@@ -163,7 +165,7 @@ span{
 
     .logo {
         margin-right: auto;
-        max-width: 180px; /* Slightly bigger for mobile */
+        max-width: 600px; /* Slightly bigger for mobile */
     }
 
     .content h1 {
@@ -185,7 +187,7 @@ span{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
     .navbar {
         padding: 5px 0;
     }
@@ -201,7 +203,7 @@ span{
 
     .logo {
         margin-right: auto;
-        max-width: 200px; /* Slightly bigger for smaller screens */
+        max-width: 600px; /* Slightly bigger for smaller screens */
     }
 
     .content h1 {
