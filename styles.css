@@ -4,6 +4,9 @@
         font-family: 'Poppins', sans-serif;
         
      }     
+     html{
+        scroll-behavior: smooth;
+     }
      
      .banner{   
         min-height: 100vh;
@@ -28,8 +31,8 @@
         
         size: 100px;
         margin-right: auto;
-        margin-top: -100px;
-        margin-left:-300px;
+        margin-top: -100px; 
+        margin-left:100px;
     } 
     
    
@@ -122,4 +125,29 @@ span{
 }
 .button:hover{
     border: none;
+}
+
+#Rizwana-Pathan{
+    max-width: 320px;
+    float: left;
+    border: 3px solid #000;
+    border-radius: 10px;
+    margin-right: 15px;
+
+
+}
+.wrapper{
+    margin: 150px auto ;
+ 
+}
+.text-box{
+    color: #000;
+    
+
+}
+.text-box h1{
+    font-size: 42px;
+}
+.text-box p{
+    font-size: 16px;
 }
