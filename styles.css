@@ -79,21 +79,23 @@ header {
     background-color: #AB92BF; 
     background-size: cover;
     background-position: center;
-    padding: 0; /* Remove padding to ensure full screen */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Align content to the top */
     align-items: center;
     text-align: center;
+    padding: 30px 0; /* Add padding to push content up */
+    margin: 0; /* Ensure no margin pushing content down */
 }
 
 .content {
     text-align: center;
+    margin-top: 50px; /* Adjust this value to control how high the content appears */
 }
 
 .content h1 {
     font-size: 48px;
-    margin-top: 20px;
+    margin: 0; /* Remove any margin */
 }
 
 .content p {
