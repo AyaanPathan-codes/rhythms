@@ -9,47 +9,48 @@ html {
     scroll-behavior: smooth;
 }
 
-.banner {
-    min-height: 100vh;
-    background-color: #AB92BF; 
-    background-size: cover;
-    background-position: center;
-    padding: 10px 8%;
+header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-.navbar {
-    width: 100%;
+.logo-navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #AB92BF; /* Adjust if needed */
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 600px; /* Increased logo size */
 }
 
-.navbar ul {
+.main-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #AB92BF; /* Adjust if needed */
+}
+
+.main-navbar ul {
     display: flex;
     list-style: none;
+    padding: 10px 0;
 }
 
-.navbar ul li {
-    margin: 0 10px;
+.main-navbar ul li {
+    margin: 0 15px;
     position: relative;
 }
 
-.navbar ul li a {
+.main-navbar ul li a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     font-size: 14px;
 }
 
-.navbar ul li::after {
+.main-navbar ul li::after {
     content: '';
     height: 3px;
     width: 0;
@@ -60,16 +61,21 @@ html {
     transition: 0.5s;  
 }
 
-.navbar ul li:hover::after {
+.main-navbar ul li:hover::after {
     width: 100%;
 }
 
-.content {
-    width: 100%;
+.banner {
+    min-height: 100vh;
+    background-color: #AB92BF; 
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #000;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
 .content h1 {
@@ -97,7 +103,7 @@ html {
     overflow: hidden;
 }
 
-span {
+button span {
     background: #009688;
     height: 100%;
     width: 0%;
@@ -146,26 +152,17 @@ span {
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 10px 0;
+    .logo {
+        max-width: 250px; /* Adjusted for better visibility */
     }
 
-    .navbar ul {
+    .main-navbar ul {
         flex-direction: column;
         align-items: center;
-        padding: 0;
-        margin: 0;
     }
 
-    .navbar ul li {
-        display: block;
+    .main-navbar ul li {
         margin: 5px 0;
-    }
-
-    .logo {
-        margin: 0 auto 10px auto;
-        max-width: 250px; /* Increased max-width for better visibility */
     }
 
     .content h1 {
@@ -188,8 +185,8 @@ span {
 }
 
 @media (max-width: 480px) {
-    .navbar {
-        padding: 5px 0;
+    .logo {
+        max-width: 200px; /* Further adjusted for smaller screens */
     }
 
     .content h1 {
@@ -210,9 +207,5 @@ span {
 
     .text-box p {
         font-size: 14px;
-    }
-
-    .logo {
-        max-width: 200px; /* Further increased max-width for smaller screens */
     }
 }
