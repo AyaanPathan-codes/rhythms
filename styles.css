@@ -153,7 +153,7 @@ button span {
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
     .logo {
-        max-width: 250px; /* Adjusted for better visibility */
+        max-width: 600px; /* Adjusted for better visibility */
     }
 
     .main-navbar ul {
@@ -186,7 +186,7 @@ button span {
 
 @media (max-width: 480px) {
     .logo {
-        max-width: 200px; /* Further adjusted for smaller screens */
+        max-width: 600px; /* Further adjusted for smaller screens */
     }
 
     .content h1 {
