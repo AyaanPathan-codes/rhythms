@@ -27,6 +27,35 @@
     width: auto; /* Maintain aspect ratio */
 }
 
+#rhythms {
+    width: 100%;
+    font-size: 10rem; /* Adjust the size as needed */
+    font-weight: 700; /* Makes the font bold */
+    color: #333; /* Dark color for text */
+    letter-spacing: -0.5px; /* Adjust letter spacing for a cleaner look */
+    text-transform: uppercase; /* Makes the text uppercase */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+    animation: fadeInUp 1.5s ease-out; /* Adds animation */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Home p {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+    color: #666; /* Lighter color for subtitle */
+    margin-top: 10px; /* Space between heading and paragraph */
+}
+
 .custom-image {
     height: 50%; /* Adjust the height as needed */
     width: 50%;  /* Maintain aspect ratio */
@@ -65,3 +94,16 @@
         margin-top: 10px; /* Adjust the top margin of the image to reduce space */
     }
 }
+.img-center {
+    display: flex;
+    justify-content: center; /* Horizontally centers the image */
+    align-items: center; /* Vertically centers the image */
+    text-align: center; /* Optional: centers text inside the div if needed */
+}
+
+.custom-image {
+    max-width: 50%; /* Ensures the image does not overflow the column */
+    height: 50%; /* Adjust height to maintain aspect ratio */
+    margin: 0; /* Removes margins */
+}
+
