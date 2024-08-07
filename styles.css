@@ -16,10 +16,11 @@
 }
 
 .container-fluid {
-    background-image: url('back1.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom: 10%;
+  
 }
 
 .navbar-brand img {
@@ -28,16 +29,45 @@
 }
 
 #rhythms {
+    margin-top: 10%;
     width: 100%;
-    font-size: 10rem; /* Adjust the size as needed */
+    font-size: 4rem; /* Adjust the size as needed */
     font-weight: 700; /* Makes the font bold */
     color: #333; /* Dark color for text */
     letter-spacing: -0.5px; /* Adjust letter spacing for a cleaner look */
     text-transform: uppercase; /* Makes the text uppercase */
-    margin: 0; /* Removes any default margin */
-    padding: 0; /* Removes any default padding */
+    margin-bottom: 30px; /* Adds space below the heading */
+    padding: 0%; /* Removes any default padding */
     animation: fadeInUp 1.5s ease-out; /* Adds animation */
+}#p {
+    position: relative;
+    background-color: #f5f5dc; /* Beige color */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adds a more pronounced shadow for better depth */
+    text-align: center; /* Center-aligns the text */
+    margin: 40px auto; /* Adds vertical margin for spacing */
+    max-width: 700px; /* Increases the max-width for more spacious look */
+    line-height: 1.6; /* Improves readability */
+    color: #333; /* Dark text color for contrast */
+    opacity: 0; /* Starts hidden for animation */
+    transform: translateY(20px); /* Starts slightly off-screen for animation effect */
+    animation: fadeInUp 1s ease-out forwards; /* Adds animation */
 }
+
+#p::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #f5f5dc; /* Matches the background color */
+}
+
 
 @keyframes fadeInUp {
     0% {
@@ -107,3 +137,199 @@
     margin: 0; /* Removes margins */
 }
 
+/* Styling for the entire services section */
+#services {
+    padding: 50px 0;
+    background-color: #f0f4f8; /* Light background color for contrast */
+    position: relative;
+}
+
+#services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between bubbles */
+}
+
+/* Common bubble styling */
+.bubble {
+    position: relative;
+    background-color: #ffffff; /* White background for bubbles */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    width: 100%;
+    max-width: 300px; /* Adjust the max-width as needed */
+    text-align: center;
+}
+
+/* Bubble specific colors */
+.art-academy {
+    background-color: #e6f7ff; /* Light blue */
+    border: 2px solid #b3d9ff; /* Slightly darker blue border */
+}
+
+.counselling {
+    background-color: #fff3e6; /* Light orange */
+    border: 2px solid #ffcc99; /* Slightly darker orange border */
+}
+
+.therapies {
+    background-color: #f2f9e6; /* Light green */
+    border: 2px solid #d9f2d9; /* Slightly darker green border */
+}
+
+/* Bubble title styling */
+.bubble .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* List item styling */
+.bubble ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bubble ul li {
+    margin: 10px 0;
+}
+
+/* Animation for bubbles */
+.bubble.animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.bubble {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+/* Add an animation effect when elements come into view */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Keyframes for the animation */
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation class */
+.animate {
+    animation: scaleIn 1s ease-out;
+}
+/* General Styles for About Us Section */
+//* General Styles for About Us Section */
+#About-Us {
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.text-center h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-center .text-primary {
+    color: #007bff; /* Primary color */
+}
+
+hr {
+    border: 1px solid #007bff; /* Primary color */
+}
+
+/* Styles for the images */
+.custom-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Hover effect for images */
+.custom-image:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 767.98px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .img-center {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+/* Add these styles to your existing CSS */
+.custom-image {
+    /* Ensure the image maintains its original width and height */
+    object-fit: cover; /* Keeps the aspect ratio of the image */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions for hover effects */
+}
+
+.custom-image:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a larger shadow on hover */
+}
+
+#rizwana .custom-image, #sana .custom-image {
+    /* Initial styles for the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    animation: fadeIn 1s ease-out; /* Animation for loading */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Starts slightly lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Ends in the normal position */
+    }
+}
+
+@media (max-width: 767.98px) {
+    /* Adjustments for mobile devices if needed */
+    .custom-image {
+        /* Ensure the hover effects work well on mobile */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Default shadow for mobile */
+        transform: none; /* No scale effect on mobile */
+    }
+}
