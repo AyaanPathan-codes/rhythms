@@ -27,6 +27,8 @@
 .navbar-brand img {
     height: 100px; /* Adjust the height as needed */
     width: auto; /* Maintain aspect ratio */
+    padding-left: 60%;
+    margin-left: -90%;
 }
 
 #rhythms {
