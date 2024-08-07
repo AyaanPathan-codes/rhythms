@@ -333,3 +333,114 @@ hr {
         transform: none; /* No scale effect on mobile */
     }
 }
+/* General styling for the section */
+.why-choose-us {
+    padding: 2rem 1rem; /* Adjust padding as needed */
+    background-color: #f0f8ff; /* Light background color for the section */
+    text-align: center; /* Center-aligns text */
+}
+
+/* Styling for the h1 element */
+.why-choose-title {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: 700; /* Bold text */
+    color: #333; /* Dark text color */
+    text-transform: uppercase; /* Uppercase text */
+    margin-bottom: 1rem; /* Space below the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for the heading */
+    animation: fadeInUp 1s ease-out; /* Animation for the heading */
+}
+
+/* Styling for the p element */
+.why-choose-description {
+    font-size: 1.25rem; /* Adjust size as needed */
+    color: #555; /* Slightly lighter text color */
+    line-height: 1.6; /* Improves readability */
+    max-width: 800px; /* Limits width for readability */
+    margin: 0 auto; /* Center-aligns the paragraph */
+    padding: 1rem; /* Padding inside the paragraph */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow around the paragraph */
+    animation: fadeIn 1.5s ease-out; /* Animation for the paragraph */
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Starts slightly lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Ends in the normal position */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* General styling for the mission section */
+.mission {
+    padding: 2rem 1rem; /* Adjust padding as needed */
+    background-color: #e3f2fd; /* Light blue background color */
+    text-align: center; /* Center-aligns text */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow around the section */
+    margin: 2rem auto; /* Space above and below the section */
+    max-width: 800px; /* Limits the width for readability */
+}
+
+/* Styling for the h1 element */
+.mission h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: 700; /* Bold text */
+    color: #1976d2; /* Primary color for the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for the heading */
+    animation: fadeInUp 1s ease-out; /* Animation for the heading */
+}
+
+/* Styling for the p element */
+.mission p {
+    font-size: 1.25rem; /* Adjust size as needed */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Improves readability */
+    max-width: 700px; /* Limits width for readability */
+    margin: 0 auto; /* Center-aligns the paragraph */
+    padding: 1rem; /* Padding inside the paragraph */
+    border-radius: 10px; /* Rounded corners for the paragraph */
+    background-color: #ffffff; /* White background color for the paragraph */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow around the paragraph */
+    animation: fadeIn 1.5s ease-out; /* Animation for the paragraph */
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Starts slightly lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Ends in the normal position */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Optional: Custom styles for the Call Us button */
+.navbar .btn {
+    border-radius: 20px; /* Rounded corners for the button */
+    font-size: 1rem; /* Adjust font size as needed */
+    padding: 0.5rem 1rem; /* Padding inside the button */
+}
