@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .bg-image {
@@ -440,7 +441,44 @@ hr {
 }
 /* Optional: Custom styles for the Call Us button */
 .navbar .btn {
+   
     border-radius: 20px; /* Rounded corners for the button */
     font-size: 1rem; /* Adjust font size as needed */
     padding: 0.5rem 1rem; /* Padding inside the button */
+}
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #d1d1d1;
+}
+.footer i {
+    margin-right: 10px;
+}
+.why-choose-us {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.why-choose-us.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+.mission {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.mission.animate {
+    opacity: 1;
+    transform: translateY(0);
 }

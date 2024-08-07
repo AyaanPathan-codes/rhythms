@@ -26,11 +26,9 @@
                             <a class="nav-link" href="#About-Us">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#contactus">Contact Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="btn btn-primary ms-3" href="tel:+1234567890">Call Us</a>
-                        </li>
+                      
                     </ul>
                 </div>
             </div>
@@ -116,25 +114,26 @@
             </p>
         </div>
     </section>
- <section class="mission" id="mission">
-    <h1>MISSION</h1>
-       <p>Our mission is to foster mental and
-        emotional well being through
-        accessible and effective counselling
-        and therapeutic and professional
-        skills of art. We aim to empower
-        individual to overcome challenges,
-        express themselves, and achieve 
-        personal growth in a supportive and
-        nurturing environment.
+    <section class="mission" id="mission">
+        <h1>MISSION</h1>
+        <p>Our mission is to foster mental and
+            emotional well being through
+            accessible and effective counselling
+            and therapeutic and professional
+            skills of art. We aim to empower
+            individual to overcome challenges,
+            express themselves, and achieve 
+            personal growth in a supportive and
+            nurturing environment.
         </p>
- </section>    
+    </section>
+    
 
 
     <section class="About my-5" id="About-Us">
         <div class="container">
             <div class="text-center">
-                <h1>About-<span class="text-primary">Us</span></h1>
+                <h1>OUR-<span class="text-primary">TEAM</span></h1>
                 <hr class="w-25 m-auto">
             </div>
 
@@ -160,7 +159,16 @@
         </div>
     </section>
 
-
+    <footer class="footer bg-dark text-white text-center py-4" id="contactus">
+        <div class="container">
+            <p class="mb-2">Contact us for more information:</p>
+            <p class="mb-0"><i class="fas fa-phone"></i> Phone: <a href="tel:+91-9607663786" class="text-white">+91-9607663786</a></p>
+            <p class="mb-0"><i class="fas fa-phone"></i> Phone: <a href="tel:+91-8080444927" class="text-white">+91-8080444927</a></p>
+            <p class="mb-0"><i class="fas fa-envelope"></i> Email: <a href="mailto:info@example.com" class="text-white">rhythms728@gmail
+                .com</a></p>
+            <p class="mt-3 mb-0">&copy; 2024 Rhythms. All rights reserved.</p>
+        </div>
+    </footer>
 
 
     <script>
@@ -197,6 +205,35 @@
     document.querySelectorAll('#rizwana, #sana').forEach(bubble => {
         observer.observe(bubble);
     });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            } else {
+                entry.target.classList.remove('animate');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    const target = document.querySelector('.why-choose-us');
+    observer.observe(target);
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            } else {
+                entry.target.classList.remove('animate');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    const target = document.querySelector('.mission');
+    observer.observe(target);
 });
         </script>
         
